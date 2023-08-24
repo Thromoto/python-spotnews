@@ -21,16 +21,18 @@ from django.conf.urls.static import static
 from rest_framework import routers
 from news_rest.views import categories_view
 from news_rest.views import users_view
+from news_rest.views import news_view
 
 
 router = routers.DefaultRouter()
 router.register(r"categories", categories_view.CategoriesViewSet)
 router.register(r"users", users_view.UsersViewSet)
+router.register(r"news", news_view.NewsViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("news.urls")),
-    path('api/', include(router.urls)),
+    path("api/", include(router.urls)),
 ]
 
 if settings.DEBUG:
