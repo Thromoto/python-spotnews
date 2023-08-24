@@ -1,11 +1,5 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 from news.views import index, news_details, categories_form, news_form
-from news_rest.views import categories_view
-
-
-router = DefaultRouter()
-router.register(r"categories", categories_view.CategoriesViewSet)
 
 
 urlpatterns = [
@@ -25,5 +19,4 @@ urlpatterns = [
         news_form,
         name="news-form"
     ),
-    path("api/", include(router.urls)),
 ]
