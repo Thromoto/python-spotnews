@@ -17,7 +17,7 @@
         <span class="news-categories">
             Categorias:
             {% for category in news_details.categories.all %}
-                {{ category.name }}{% if not forloop.last %}, {% endif %}
+                {{ category.name }}
             {% endfor %}
         </span>
         <span class="news-author">{{ news_details.author }}</span>
