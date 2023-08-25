@@ -22,6 +22,6 @@
         </span>
         <span class="news-author">{{ news_details.author }}</span>
         <span class="news-date">{{ news_details.created_at|date:"d/m/Y" }}</span>
-        <img src="{% static news_details.image.url %}" alt="{{ news_details.title }}">
+        <img src="{% static news_details.image.url %}" alt="{{ news_details.title }}" height="100">
     </main>
 {% endblock %}

@@ -31,8 +31,8 @@ router.register(r"news", news_view.NewsViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("news.urls")),
     path("api/", include(router.urls)),
+    path("", include("news.urls")),
 ]
 
 if settings.DEBUG:
