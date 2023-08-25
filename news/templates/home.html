@@ -9,13 +9,17 @@
     <header class="header">
         <ul class="header-links">
             <li><a href="{% url 'home-page' %}">Home</a></li>
+            <li><a href="{% url 'categories-form' %}">Cadastrar Categorias</a></li>
+            <li><a href="{% url 'news-form' %}">Cadastrar Notícias</a></li>
         </ul>
     </header>
     <main>
         {% for new in news %}
-            <h2 class="news-title">{{ new.title }}</h2>
-            <span class="news-date">{{ new.created_at|date:"d/m/Y" }}</span>
-            <img src="{% static new.image.url %}" alt="{{ new.title }}" height="100">
+            <a href="{% url 'news-details-page' new.id %}">
+                <h2 class="news-title">{{ new.title }}</h2>
+                <span class="news-date">{{ new.created_at|date:"d/m/Y" }}</span>
+                <img src="{% static new.image.url %}" alt="{{ new.title }}" height="100">
+            </a>
         {% endfor %}
     </main>
 {% endblock %}
