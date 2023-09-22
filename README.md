@@ -1,10 +1,39 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+# Projeto Spotnews
+
+O projeto que tem como principal objetivo fazer consultas em notícias sobre tecnologia.
+
+As notícias podem ser obtidas através da raspagem do blog da Trybe.
+
+🚵 Habilidades trabalhadas:
+
+* Escrever aplicações usando Django e Django Rest Framework.
+* Desenvolver uma aplicação que usa a arquitetura Model-View-Template.
+* Trabalhar com banco de dados MYSQL.
+
+
+## Instalação
+
+1. Clone o repositório.
+```bash
+git clone git@github.com:Thromoto/python-spotnews.git
+```
+2. Entre na pasta do repositório que você acabou de clonar.
+
+3. Crie o ambiente virtual para o projeto.
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+```
+4. Atualize seu pip antes de instalar as dependências.
+```bash
+python3 -m pip install --upgrade pip
+```
+5. Instale as dependências.
+```bash
+python3 -m pip install -r dev-requirements.txt
+```
+
+
+## Stack utilizada
+
+Python, Django, Django Rest Framework, arquitetura Model-View-Template, MYSQL.
